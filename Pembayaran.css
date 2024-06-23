@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color:  #00c4ff;
+    color: white;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ 
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.kos-image {
+    width: 950px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    background-color: #00BFFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h1 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.detail-pembayaran {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.metode-pembayaran {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btn-pembayaran{
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.metode-pembayaran p{
+    text-align: left;
+    margin: 10px;
+}
+
+.btn-bayar {
+    width: 150px;
+    height: 40px;
+    background-color:  #00c4ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-bayar:hover {
+    background-color:  #00c4ff;
+}

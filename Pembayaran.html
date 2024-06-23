@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Kos</title>
+    <link rel="stylesheet" href="Pembayaran.css">
+</head>
+<body>
+    <header>
+        <h1>KostFinder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Kos Saya</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Pembayaran</h1>
+        <img src="Kos Kenangan.jpeg" alt="Kos kenangan" class="kos-image"><br>
+        <span class="badge">Campuran</span>
+        <h3>Kos Kenanga Pasar IV</h3>
+        <p>Jl. Bunga Wijaya Kusuma No. 12</p>
+
+        <div class="detail-pembayaran">
+            <p>Harga Sewa Kos (2 bulan): Rp. 1.500.000</p>
+            <p>Deposit: Rp. 500.000</p>
+            <p>Layanan Aplikasi: Rp. 10.000</p>
+            <hr>
+            <p>Total: Rp. 2.010.000</p>
+        </div>
+
+        <h2>Metode Pembayaran</h2>
+        <div class="metode-pembayaran">
+           <button class="btn-pembayaran"><img src="Logo Ovo.webp" alt="Logo Ovo"></button>
+           <p>OVO</p>
+           <button class="btn-pembayaran"><img src="logo Mandiri.jpeg" alt="Logo Mandiri"></button>
+           <P>Mandiri</P>
+           <button class="btn-pembayaran"><img src="Logo Dana.jpg" alt="Logo Dana"></button>
+           <p>Dana</p>
+        </div>
+
+        <button class="btn-bayar">Bayar</button>
+    </div>
+
+    <script>
+        const btnPembayaran = document.querySelectorAll('.btn-pembayaran');
+        const btnBayar = document.querySelector('.btn-bayar');
+        
+        btnPembayaran.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.add('active');
+                btnPembayaran.forEach(btn2 => {
+                    if (btn2 != btn) {
+                        btn2.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        btnBayar.addEventListener('click', () => {
+            const metodePembayaran = document.querySelector('.btn-pembayaran.active');
+            if (metodePembayaran) {
+                alert(Pembayaran, {metodePembayarantextContent} );
+            } else {
+                alert('Pilih metode pembayaran terlebih dahulu');
+            }
+        });
+    </script>
+</body>
+</html>

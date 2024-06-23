@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Sewa</title>
+    <link rel="stylesheet" href="Pengajuansewa.css">
+</head>
+<body>
+    <header>
+        <h1>KostFinder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Kos Saya</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Pengajuan Sewa</h1>
+            <article>
+                <img src="Kos Kenangan.jpeg" alt="Kos Kenangan Pasar IV" class="kos-image">
+                <address>
+                    <h2>Kos kenangan Pasar IV</h2>
+                    <p>⭐ 4.9</p>
+                    <p>📍Jl. Bunga Wijaya Kusuma No. 12</p>
+                    <p>Rp. 750.000/bulan</p>
+                </address>
+            </article>
+
+            <form id="rentalForm">
+                <fieldset>
+                    <legend>Pilih tanggal mulai kos, paling lama sebulan setelah pegajuan sewa ini</legend>
+                    <label for="startDate">Mulai Kos</label>
+                    <input type="date" id="startDate" name="startDate" required>
+
+                    <label for="duration">Durasi</label>
+                    <input type="number" id="duration" name="duration" value="1" min="1" required> Bulan
+                    <button type="button" id="increaseDuration">+</button>
+                    <button type="button" id="decreaseDuration">-</button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Data Penyewa</legend>
+                    <p>Nama Lengkap: Marcello</p>
+                    <p>Nomor Handphone: 08XXXXXXXXXX</p>
+                    <p>Pekerjaan: Mahasiswa</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dokumen Persyaratan</legend>
+                    <p>Silahkan melengkapi dokumen berikut:</p>
+                    <p>Data saya aman ?</p>
+                    <label for="ktp">Foto KTP</label>
+                    <input type="file" id="ktp" name="ktp" accept="image/*" required>
+
+                    <label for="photo">Foto Anda</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </fieldset>
+
+                <button type="submit">Sewa</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const increaseDuration = document.querySelector('#increaseDuration');
+    const decreaseDuration = document.querySelector('#decreaseDuration');
+    const durationInput = document.querySelector('#duration');
+
+    increaseDuration.addEventListener('click', function() {
+        durationInput.value = parseInt(durationInput.value) + 1;
+    });
+
+    decreaseDuration.addEventListener('click', function() {
+        if (durationInput.value > 1) {
+            durationInput.value = parseInt(durationInput.value) - 1;
+        }
+    });
+});
+    </script>
+</body>
+</html>

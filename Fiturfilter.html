@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Kos</title>
+    <link rel="stylesheet" href="fiturfilter.css">
+</head>
+<body>
+    <header><h1>KostFinder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Kos Saya</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1>Filter Kos</h1>
+    <main>
+        <form action="#">
+            <div class="filter-group">
+                <label for="tipe-kos">Tipe Kos:</label>
+                <select id="tipe-kos" name="tipe-kos">
+                    <option value="">Semua</option>
+                    <option value="putra">Putra</option>
+                    <option value="putri">Putri</option>
+                    <option value="campuran">Campuran</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="harga-min">Harga Minimum:</label>
+                <input type="number" id="harga-min" name="harga-min" min="0" placeholder="Minimum">
+
+                <label for="harga-max">Harga Maksimum:</label>
+                <input type="number" id="harga-max" name="harga-max" min="0" placeholder="Maksimum">
+            </div>
+
+            <div class="filter-group">
+                <label for="waktu-bayar-sewa">Waktu Bayar Sewa:</label>
+                <select id="waktu-bayar-sewa" name="waktu-bayar-sewa">
+                    <option value="">Semua</option>
+                    <option value="mingguan">Mingguan</option>
+                    <option value="bulanan">Bulanan</option>
+                    <option value="3-bulan">3 Bulan</option>
+                    <option value="6-bulan">6 Bulan</option>
+                    <option value="tahunan">Tahunan</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="aturan-kos">Aturan Kos:</label>
+                <input type="checkbox" id="akses-24-jam" name="aturan-kos[]" value="akses-24-jam">
+                <label for="akses-24-jam">Akses 24 Jam</label>
+
+                <input type="checkbox" id="boleh-pasutri" name="aturan-kos[]" value="boleh-pasutri">
+                <label for="boleh-pasutri">Boleh Pasutri</label>
+
+                <input type="checkbox" id="maksimum-2-orang" name="aturan-kos[]" value="maksimum-2-orang">
+                <label for="maksimum-2-orang">Maksimum 2 Orang</label>
+            </div>
+
+            <button type="submit">Tampilkan 50 Kos</button>
+        </form>
+    </main>
+
+</body>
+</html>
