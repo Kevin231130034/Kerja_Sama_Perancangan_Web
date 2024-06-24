@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+ 
+header nav button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+header nav span {
+    margin: 0 10px;
+}
+ 
+main {
+    padding: 20px;
+}
+ 
+.image-carousel {
+    text-align: center;
+    position: relative;
+}
+ 
+.image-carousel img {
+    width: 100%;
+    height: auto;
+}
+ 
+.image-carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+ 
+.image-carousel button:first-of-type {
+    left: 10px;
+}
+ 
+.image-carousel button:last-of-type {
+    right: 10px;
+}
+ 
+.owner-info {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+ 
+.owner-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+ 
+.owner-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+ 
+.kos-details {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+ 
+.kos-details h1, .kos-details p {
+    margin: 10px 0;
+}
+ 
+.kos-details article {
+    margin: 20px 0;
+}
+ 
+.kos-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ 
+.kos-details ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.kos-details ul li {
+    padding: 5px 0;
+}
+ 
+.reviews {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+ 
+.reviews h2, .reviews p {
+    margin: 10px 0;
+}
+ 
+.reviews article {
+    margin: 20px 0;
+}
+ 
+.reviews h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+ 
+.reviews p {
+    margin: 5px 0;
+}
+ 
+.reviews time {
+    font-size: 12px;
+    color: #888;
+}
+ 
+.location {
+    text-align: center;
+    padding: 20px 0;
+}
+ 
+.location h2 {
+    margin-bottom: 20px;
+}
+ 
+.location img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+ 
+.location ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+ 
+.location ul li {
+    padding: 5px 0;
+}
+ 
+.location button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.star {
+    color: gold;
+    font-size: 16px;
+    display: inline-block;
+}
